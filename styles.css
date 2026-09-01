@@ -12,22 +12,27 @@
 .column {
   flex: 1;
 }
-
-/* Styles the actual box inside the column */
-.box {
-  background-color: #f4f4f4;
-  border: 2px solid #333;
-  border-radius: 8px;
-  padding: 20px;
-  box-sizing: border-box; /* Ensures padding doesn't break layout width */
+ul {
+  list-style-position: inside;
+  font-size: 43px;
 }
+.modern-outline {
+    font-size: 50px;
+    font-weight: normal;
+    color: black; /* Inside text color */
+
+    /* 1st parameter: thickness | 2nd parameter: color */
+    -webkit-text-stroke: 0.5px white;
+  }
+/* Styles the actual box inside the column */
+
 .text-box {
        background-color: #f4f4f4;       /* Changes the inside color */
        border: 5px solid blue;       /* Creates a solid outline */
        padding: 20px;                   /* Adds breathing room inside the box */
        margin: 15px;                    /* Adds spacing outside the box */
        width: 400px;                    /* Restricts how wide the box can get */
-       border-radius: 8px;              /* Rounds out the sharp corners */
+       border-radius: 16px;              /* Rounds out the sharp corners */
        color: #333333;                  /* Sets the text color */
        display: inline-block;
        text-align: left;
